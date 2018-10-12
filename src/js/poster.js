@@ -110,8 +110,8 @@ Object.freeze(posters);
     let posterSection = document.querySelector("#poster-section");
     for (let index = 0; index < POSTER_COUNT; index++) {
         let target = posters[Math.floor(Math.random() * posters.length)]
-        posterSection.appendChild(`
+        posterSection.innerHTML += `
         <li><a href="${target.url}"><img class="" alt="${target.title}" src="poster/${target.file}"></a></li>
-        `);
+        `;
     }
 })()
