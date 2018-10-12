@@ -1,6 +1,7 @@
 ul.poster-section li {
     display: inline-block;
-    width:33%
+    width:32%;
+    vertical-align: middle;
 }
 
 ul.poster-section li a {
@@ -8,7 +9,7 @@ ul.poster-section li a {
 }
 
 ul.poster-section li a img{
-    widows: 100%;
+    width: 100%;
     object-fit: contain;
 }
 
