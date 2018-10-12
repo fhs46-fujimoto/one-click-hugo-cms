@@ -26,6 +26,7 @@ export default {
   context: path.join(__dirname, "src"),
   entry: {
     app: ["./js/app"],
+    poster: ["./js/poster"],
     cms: ["./js/cms"]
   },
   output: {
