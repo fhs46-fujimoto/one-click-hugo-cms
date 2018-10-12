@@ -1,6 +1,7 @@
 ul.poster-section li {
     display: inline-block;
-    width:32%;
+    width:100px;
+    height:100px;
     vertical-align: middle;
 }
 
