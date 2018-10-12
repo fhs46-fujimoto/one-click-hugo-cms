@@ -103,13 +103,12 @@ const posters = [
         "url" : "https://www.irasutoya.com/2015/12/blog-post_199.html"
     }
 ];
-Object.freeze(posters);
 
 (function(){
     // ポスターの表示数分liを追加する(重複を許容)
     let posterSection = document.querySelector("#poster-section");
-    for (let index = 0; index < POSTER_COUNT; index++) {
-        let target = posters[Math.floor(Math.random() * posters.length)]
+    for (let index = 0; index < POSTER_COUNT && posters.length > 0; index++) {
+        let target = posters.splice(Math.floor(Math.random() * posters.length) , 1);
         posterSection.innerHTML += `
         <li><a href="${target.url}"><img class="" alt="${target.title}" src="poster/${target.file}"></a></li>
         `;
