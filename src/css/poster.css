@@ -1,9 +1,9 @@
 ul.poster-section li {
-    display: inline-box;
+    display: inline-block;
 }
 
 ul.poster-section li a img{
-    width:100px;
-    height:100px;
+    width:33.3%;
+    object-fit: contain;
 }
 
