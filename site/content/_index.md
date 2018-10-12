@@ -1,6 +1,6 @@
 ---
 title: "こいのエンジニアリング同窓会サンプル"
-subtitle: "こいのエンジニアリング同窓会サンプル"
+subtitle: "同窓会からのお知らせを掲載していきます！！！"
 image: /img/main_img1.jpg
 blurb:
     heading: 日程
