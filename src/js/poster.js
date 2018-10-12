@@ -108,7 +108,7 @@ const posters = [
     // ポスターの表示数分liを追加する(重複を許容)
     let posterSection = document.querySelector("#poster-section");
     for (let index = 0; index < POSTER_COUNT && posters.length > 0; index++) {
-        let target = posters.splice(Math.floor(Math.random() * posters.length) , 1);
+        let target = posters.splice(Math.floor(Math.random() * posters.length) , 1)[0];
         posterSection.innerHTML += `
         <li><a href="${target.url}"><img class="" alt="${target.title}" src="poster/${target.file}"></a></li>
         `;
