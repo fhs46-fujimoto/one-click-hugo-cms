@@ -1,7 +1,7 @@
 ---
 title: "こいのエンジニアリング同窓会サンプル"
 subtitle: "こいのエンジニアリング同窓会サンプル"
-image: /img/main_img2.jpg
+image: /img/main_img1.jpg
 blurb:
     heading: 日程
     text: "2019年04月20日"
