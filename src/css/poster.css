@@ -1,0 +1,9 @@
+ul.poster-section li {
+    display: inline-box;
+}
+
+ul.poster-section li a img{
+    width:100px;
+    height:100px;
+}
+
