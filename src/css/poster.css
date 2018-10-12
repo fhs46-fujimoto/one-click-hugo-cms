@@ -1,3 +1,8 @@
+ul.poster-section {
+    width:fit-content;
+    margin: auto;
+}
+
 ul.poster-section li {
     display: inline-block;
     width:100px;
