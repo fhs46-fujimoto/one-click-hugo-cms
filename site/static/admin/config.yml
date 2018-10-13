@@ -28,7 +28,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "名前", name: "investor", widget: "string"}
       - {label: "卒業期", name: "grade", widget: "string"}
       - {label: "口数", name: "contribution", widget: "number"}
-      # - {label: "広告画像", name: "image", widget: "image", required: false}
+      - {label: "広告画像", name: "image", widget: "image", required: false}
       # - {label: "メッセージ", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
