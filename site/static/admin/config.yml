@@ -93,3 +93,6 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Heading, name: heading, widget: string}
               - {label: Text, name: text, widget: text}
               - {label: Image, name: imageUrl, widget: image}
+      - file: "site/content/sponors/_index.md"
+        label: "スポンサー一覧"
+        name: "sponors"
