@@ -6,6 +6,8 @@
 
 {{ partial "poster" . }}
 
-{{ partial "blog" . }}
+{{ partial "blog" .Params.news }}
+
+{{ partial "blog" .Params.sponsor }}
 
 {{ end }}
