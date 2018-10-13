@@ -1,7 +1,13 @@
 {{ define "main" }}
 
 <div class="mw7 center">
-    <table>
+    <table class="" style="border: 1px slod black;width: 100%;" rules="all">
+        <colgroup>
+            <col width="6em" />
+            <col width="5em" />
+            <col width="50%" />
+            <col width="50%" />
+        </colgroup>
         <thead>
             <tr>
                 <th>名前</th>
@@ -11,7 +17,7 @@
             </tr>
         </thead>
         <tbody>
-            {{ range (where .Pages "Type" "poster") }}
+            {{ range (where .Data.Pages "Type" "poster") }}
             <tr>
                 <td>{{ .Params.sponsor}}</td>
                 <td>{{ .Params.grade}}</td>
