@@ -3,8 +3,8 @@
 <div class="mw7 center">
     <table class="" style="border: 1px slod black;width: 100%;" rules="all">
         <colgroup>
-            <col width="6em" align="center" />
-            <col width="5em" align="center" />
+            <col width="6em" align="center"/>
+            <col width="5em" align="center"/>
             <col width="50%" />
             <col width="50%" />
         </colgroup>
@@ -17,12 +17,12 @@
             </tr>
         </thead>
         <tbody>
-            {{ range (where .Parent.Pages "Type" "poster") }}
+            {{ range (where .Parent.Pages  "Type" "poster") }}
             <tr>
-                <td>{{ printf "%#v" .}}</td>
-                <td>z</td>
-                <td>z</td>
-                <td>z</td>
+                <td>{{ .Params.sponsor}}</td>
+                <td>{{ .Params.grade}}</td>
+                <td>{{ .Params.link_url}}</td>
+                <td style="overflow: elipsis;">{{ .Content}}</td>
             </tr>
             {{ end }}
         </tbody>
