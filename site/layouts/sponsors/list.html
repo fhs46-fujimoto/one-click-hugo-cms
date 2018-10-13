@@ -2,29 +2,33 @@
 
 <div class="mw7 center">
     <div class="flex-ns mhn2-ns mw7">
-        <div class="w-33-ns ph2">
-            <div class="ph2">
+        <div class="w-100 ph2">
+            <div class="ph2 w-25">
                 名前
             </div>
-            <div class="ph2">
+            <div class="ph2 w-25">
                 卒業期
             </div>
-            <div class="ph2">
+            <div class="ph2 w-25">
                 URL
             </div>
-            <div class="ph2">
+            <div class="ph2 w-25">
                 メッセージ
             </div>
         </div>
         {{ range (where .Parent.Pages "Type" "poster") }}
-        <div class="w-33-ns ph2">
-            <div class="ph2"><a href="{{.Permalink}}">{{ .Params.sponsor}}</a>
+        <div class="w-100 ph2">
+            <div class="ph2 w-25">
+                <a href="{{.Permalink}}">{{ .Params.sponsor}}</a>
             </div>
-            <div class="ph2">{{ .Params.grade}}
+            <div class="ph2 w-25">
+                {{ .Params.grade}}
             </div>
-            <div class="ph2">{{ .Params.link_url}}
+            <div class="ph2 w-25">
+                {{ .Params.link_url}}
             </div>
-            <div class="ph2">{{ .Content}}
+            <div class="ph2 w-25">
+                {{ .Content}}
             </div>
         </div>
         {{ end }}
