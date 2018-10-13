@@ -25,7 +25,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "卒業期", name: "grade", widget: "string"}
       - {label: "口数", name: "contribution", widget: "number"}
       - {label: "広告画像", name: "image", widget: "image", required: false}
-      - {label: "URL", name: "link-url", widget: "string", required: false}
+      - {label: "URL", name: "link_url", widget: "string", required: false}
       - {label: "ALT", name: "alt", widget: "string", required: false}
       - {label: "メッセージ", name: "body", widget: "markdown"}
   - name: "pages"
