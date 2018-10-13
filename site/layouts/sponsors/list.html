@@ -1,18 +1,18 @@
 {{ define "main" }}
 
 <div class="mw7 center">
-    <div class="flex-ns mhn2-ns mw7">
+    <div class="dt flex-ns mhn2-ns mw7">
         <div class="dt-row">
-            <div class="dtc w-25">
+            <div class="dtc">
                 名前
             </div>
-            <div class="dtc w-25">
+            <div class="dtc">
                 卒業期
             </div>
-            <div class="dtc w-25">
+            <div class="dtc">
                 URL
             </div>
-            <div class="dtc w-25">
+            <div class="dtc">
                 メッセージ
             </div>
         </div>
@@ -21,13 +21,13 @@
             <div class="dib w-25">
                 <a href="{{.Permalink}}">{{ .Params.sponsor}}</a>
             </div>
-            <div class="dtc w-25">
+            <div class="dtc">
                 {{ .Params.grade}}
             </div>
-            <div class="dtc w-25">
+            <div class="dtc">
                 {{ .Params.link_url}}
             </div>
-            <div class="dtc w-25">
+            <div class="dtc">
                 {{ .Content}}
             </div>
         </div>
