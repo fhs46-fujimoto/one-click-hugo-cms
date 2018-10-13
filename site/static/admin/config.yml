@@ -20,7 +20,7 @@ collections: # A list of collections the CMS should be able to edit
     folder: "site/content/poster" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "タイトル", name: "title", widget: "string"}
       - {label: "名前", name: "investor", widget: "string"}
       - {label: "卒業期", name: "grade", widget: "string"}
       - {label: "口数", name: "contribution", widget: "number"}
