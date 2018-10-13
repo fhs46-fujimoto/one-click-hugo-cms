@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<div class="mw7 center">
+    <table>
+        <thead>
+            <th>名前</th>
+            <th>卒業期</th>
+            <th>URL</th>
+            <th>メッセージ</th>
+        </thead>
+        <tbody>
+            {{ range (where .Data.Pages "Type" "poster") }}
+            <tr>
+                <td>{{ .Params.sponsor}}</td>
+                <td>{{ .Params.grade}}</td>
+                <td>{{ .Params.link_url}}</td>
+                <td style="overflow: elipsis;">{{ .Content}}</td>
+            </tr>
+            {{ end }}
+        </tbody>
+    </table>
+</div>
