@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <div class="mw7 center">
-    <div class="dt flex-ns mhn2-ns mw7">
+    <div class="flex-ns mhn2-ns mw7" style="display: table;">
         <div class="dt-row">
             <div class="dtc">
                 名前
@@ -18,7 +18,7 @@
         </div>
         {{ range (where .Parent.Pages "Type" "poster") }}
         <div class="dt-row">
-            <div class="dib w-25">
+            <div class="dtc">
                 <a href="{{.Permalink}}">{{ .Params.sponsor}}</a>
             </div>
             <div class="dtc">
