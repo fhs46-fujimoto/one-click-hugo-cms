@@ -7,9 +7,7 @@ blurb:
     text: "2019年04月20日"
 news:
     title: "ニュース"
-    number-of-articles: 2
 sponsor:
     title: "スポンサー"
-    number-of-articles: -1
 ---
 
