@@ -5,8 +5,8 @@ media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
+  - name: "news" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "ニュース" # Used in the UI, ie.: "New Post"
     folder: "site/content/post" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
@@ -15,6 +15,16 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+#  - name: "poster" # Used in routes, ie.: /admin/collections/:slug/edit
+#    label: "広告" # Used in the UI, ie.: "New Post"
+#    folder: "site/content/poster" # The path to the folder where the documents are stored
+#    create: true # Allow users to create new documents in this collection
+#    fields: # The fields each document in this collection have
+#      - {label: "名前", name: "investor", widget: "string"}
+#      - {label: "卒業期", name: "grade", widget: "string"}
+#      - {label: "口数", name: "contribution", widget: "number"}
+#      - {label: "広告画像", name: "image", widget: "image", required: false}
+#      - {label: "メッセージ", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
     files:
