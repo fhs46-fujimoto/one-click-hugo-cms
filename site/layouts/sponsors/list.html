@@ -17,9 +17,9 @@
             </tr>
         </thead>
         <tbody>
-            {{ range (where .Data.Pages "Type" "poster") }}
+            {{ range (where .Parent.Pages  "Type" "poster") }}
             <tr>
-                <td>{{ .sponsor}}</td>
+                <td><a href="{{.Permalink}}">{{ .Params.sponsor}}</a></td>
                 <td>{{ .Params.grade}}</td>
                 <td>{{ .Params.link_url}}</td>
                 <td style="overflow: elipsis;">{{ .Content}}</td>
