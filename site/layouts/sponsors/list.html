@@ -1,31 +1,33 @@
 {{ define "main" }}
 
 <div class="mw7 center">
-    <table class="" style="border: 1px slod black;width: 100%;" rules="all">
-        <colgroup>
-            <col style="width: 6em;" align="center" />
-            <col style="width: 6em;" align="center" />
-            <col />
-            <col />
-        </colgroup>
-        <thead>
-            <tr>
-                <th>名前</th>
-                <th>卒業期</th>
-                <th>URL</th>
-                <th>メッセージ</th>
-            </tr>
-        </thead>
-        <tbody>
-            {{ range (where .Parent.Pages "Type" "poster") }}
-            <tr>
-                <td><a href="{{.Permalink}}">{{ .Params.sponsor}}</a></td>
-                <td>{{ .Params.grade}}</td>
-                <td>{{ .Params.link_url}}</td>
-                <td style="overflow: elipsis;">{{ .Content}}</td>
-            </tr>
-            {{ end }}
-        </tbody>
-    </table>
+    <div class="flex-ns mhn2-ns mw7">
+        <div class="w-33-ns ph2">
+            <div class="ph2">
+                名前
+            </div>
+            <div class="ph2">
+                卒業期
+            </div>
+            <div class="ph2">
+                URL
+            </div>
+            <div class="ph2">
+                メッセージ
+            </div>
+        </div>
+        {{ range (where .Parent.Pages "Type" "poster") }}
+        <div class="w-33-ns ph2">
+            <div class="ph2"><a href="{{.Permalink}}">{{ .Params.sponsor}}</a>
+            </div>
+            <div class="ph2">{{ .Params.grade}}
+            </div>
+            <div class="ph2">{{ .Params.link_url}}
+            </div>
+            <div class="ph2">{{ .Content}}
+            </div>
+        </div>
+        {{ end }}
+    </div>
 </div>
 {{ end }}
