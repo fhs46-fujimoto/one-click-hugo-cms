@@ -1,0 +1,21 @@
+ul.poster-section {
+    width:fit-content;
+    margin: auto;
+}
+
+ul.poster-section li {
+    display: inline-block;
+    width:100px;
+    height:100px;
+    vertical-align: middle;
+}
+
+ul.poster-section li a {
+    display:block;
+}
+
+ul.poster-section li a img{
+    width: 100%;
+    object-fit: contain;
+}
+
