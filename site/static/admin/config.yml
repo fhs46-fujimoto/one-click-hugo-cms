@@ -95,4 +95,4 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Image, name: imageUrl, widget: image}
       - file: "site/content/sponsors/_index.md"
         label: "スポンサー一覧"
-        name: "sponors"
+        name: "sponsors"
