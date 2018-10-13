@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ printf "%#v" .Parent.Pages  "Type" "poster"}}
+
 <div class="mw7 center">
     <table class="" style="border: 1px slod black;width: 100%;" rules="all">
         <colgroup>
@@ -17,6 +17,15 @@
             </tr>
         </thead>
         <tbody>
+            {{ range (where .Parent.Pages  "Type" "poster") }}
+            <tr>
+                <td>{{ .sponsor}}</td>
+                <td>{{ .Params.grade}}</td>
+                <td>{{ .Params.link_url}}</td>
+                <td style="overflow: elipsis;">{{ .Content}}</td>
+            </tr>
+            {{ end }}
+        </tbody>
     </table>
 </div>
 {{ end }}
