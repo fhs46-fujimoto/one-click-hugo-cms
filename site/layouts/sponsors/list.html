@@ -3,13 +3,15 @@
 <div class="mw7 center">
     <table>
         <thead>
-            <th>名前</th>
-            <th>卒業期</th>
-            <th>URL</th>
-            <th>メッセージ</th>
+            <tr>
+                <th>名前</th>
+                <th>卒業期</th>
+                <th>URL</th>
+                <th>メッセージ</th>
+            </tr>
         </thead>
         <tbody>
-            {{ range (where .Data.Pages "Type" "poster") }}
+            {{ range (where .Pages "Type" "poster") }}
             <tr>
                 <td>{{ .Params.sponsor}}</td>
                 <td>{{ .Params.grade}}</td>
