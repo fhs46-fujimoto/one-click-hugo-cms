@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+  <div class="mw6 center ph3 pv4">
+    <h1 class="f2 lh-title b mb3">{{.Title}}</h1>
+    <div class="flex justify-between grey-3">
+      <p>{{ .Date.Format "2006-01-02" }}</p>
+      <p>Read in {{ .ReadingTime }} minutes</p>
+    </div>
+    <div class="cms mw6">
+      <p>{{ .Params.grade }} {{ .Params.sponsor }} 様</p>
+      {{ if .Params.link-url }}
+        <a href="{{ .Params.image }}">
+          {{ if .Params.image }}
+            <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+          {{ end }}
+        </a>
+      {{ else }}
+        {{ if .Params.image }}
+          <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+        {{ end }}
+      {{ end }}
+      {{ .Content }}
+    </div>
+  </div>
+{{ end }}
