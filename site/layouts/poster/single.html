@@ -9,7 +9,7 @@
     <div class="cms mw6">
       <p>{{ .Params.grade }} {{ .Params.sponsor }} 様</p>
       {{ if .Params.link_url }}
-        <a href="{{ .Params.image }}">
+        <a href="{{ .Params.link_url }}">
           {{ if .Params.image }}
             <img src="{{ .Params.image }}" alt="{{ .Title }}" />
           {{ end }}
