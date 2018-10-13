@@ -3,8 +3,8 @@
 <div class="mw7 center">
     <table class="" style="border: 1px slod black;width: 100%;" rules="all">
         <colgroup>
-            <col width="6em" />
-            <col width="5em" />
+            <col width="6em" align="center"/>
+            <col width="5em" align="center"/>
             <col width="50%" />
             <col width="50%" />
         </colgroup>
@@ -19,7 +19,7 @@
         <tbody>
             {{ range (where .Data.Pages "Type" "poster") }}
             <tr>
-                <td>{{ .Params.sponsor}}</td>
+                <td>{{ .sponsor}}</td>
                 <td>{{ .Params.grade}}</td>
                 <td>{{ .Params.link_url}}</td>
                 <td style="overflow: elipsis;">{{ .Content}}</td>
