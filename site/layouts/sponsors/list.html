@@ -3,37 +3,41 @@
 {{ partial "jumbotron" (dict "imageUrl" "/img/main_img3.jpg" "title" "スポンサー一覧") }}
 
 <div class="mw7 center">
-    <div class="flex-ns mhn2-ns mw7" style="display: table;">
-        <div class="dt-row">
-            <div class="dtc">
-                名前
-            </div>
-            <div class="dtc">
-                卒業期
-            </div>
-            <div class="dtc">
-                URL
-            </div>
-            <div class="dtc">
-                メッセージ
-            </div>
-        </div>
-        {{ range (where .Parent.Pages "Type" "poster") }}
-        <div class="dt-row">
-            <div class="dtc">
-                <a href="{{.Permalink}}">{{ .Params.sponsor}}</a>
-            </div>
-            <div class="dtc">
-                {{ .Params.grade}}
-            </div>
-            <div class="dtc">
-                <a href="{{ .Params.link_url}}">{{ .Params.link_url}}</a>
-            </div>
-            <div class="dtc">
-                {{ .Content}}
-            </div>
-        </div>
-        {{ end }}
-    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    名前
+                </th>
+                <th>
+                    卒業期
+                </th>
+                <th>
+                    URL
+                </th>
+                <th>
+                    メッセージ
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ range (where .Parent.Pages "Type" "poster") }}
+            <tr>
+                <td>
+                    <a href="{{.Permalink}}">{{ .Params.sponsor}}</a>
+                </td>
+                <td>
+                    {{ .Params.grade}}
+                </td>
+                <td>
+                    <a href="{{ .Params.link_url}}">{{ .Params.link_url}}</a>
+                </td>
+                <td>
+                    {{ .Content}}
+                </td>
+            </tr>
+            {{ end }}
+        </tbody>
+    </table>
 </div>
 {{ end }}
