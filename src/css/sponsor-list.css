@@ -27,3 +27,8 @@ table.sponsor-list th,table.sponsor-list td {
 table.sponsor-list tr:nth-child(odd) {
     background-color: var(--grey-1);
 }
+
+.poster-message {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
