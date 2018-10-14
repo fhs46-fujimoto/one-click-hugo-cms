@@ -22,6 +22,7 @@ table.sponsor-list th,table.sponsor-list td {
     border-bottom-width: 1px;
     border-style: solid;
     border-color:black;
+    width:25%;
 }
 
 table.sponsor-list tr:nth-child(odd) {
@@ -31,6 +32,6 @@ table.sponsor-list tr:nth-child(odd) {
 .poster-message {
     white-space: nowrap;
     text-overflow: ellipsis;
-    max-width: 20em;
     overflow: hidden;
+    max-width: 1em;
 }
