@@ -1,3 +1,7 @@
+:root{
+    --grey-3: rgba(89, 87, 86, 1);
+    --grey-4: rgba(66, 64, 64, 1);    
+}
 table.sponsor-list th {
     background-color: var(--grey-4);
 }
