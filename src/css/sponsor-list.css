@@ -1,0 +1,20 @@
+table.sponsor-list th {
+    background-color: var(--grey-4);
+}
+
+table.sponsor-list th {
+    background-color: var(--grey-4);
+}
+
+table.sponsor-list th,table.sponsor-list td {
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-color:black;
+}
+
+table.sponsor-list tr:nth-child(odd) {
+    background-color: var(--grey-3);
+}
