@@ -29,7 +29,7 @@ table.sponsor-list tr:nth-child(odd) {
     background-color: var(--grey-1);
 }
 
-.poster-message {
+.overflow-ellipsis {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
