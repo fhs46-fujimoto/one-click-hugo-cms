@@ -31,4 +31,5 @@ table.sponsor-list tr:nth-child(odd) {
 .poster-message {
     white-space: nowrap;
     text-overflow: ellipsis;
+    max-width: 20em;
 }
