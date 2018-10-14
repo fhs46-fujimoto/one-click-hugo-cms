@@ -32,4 +32,5 @@ table.sponsor-list tr:nth-child(odd) {
     white-space: nowrap;
     text-overflow: ellipsis;
     max-width: 20em;
+    overflow: hidden;
 }
