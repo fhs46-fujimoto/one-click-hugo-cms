@@ -21,6 +21,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "タイトル", name: "title", widget: "string"}
+      - {label: "掲載日", name: "date", widget: "datetime"}
       - {label: "名前", name: "sponsor", widget: "string"}
       - {label: "卒業期", name: "grade", widget: "string"}
       - {label: "口数", name: "contribution", widget: "number"}
@@ -98,4 +99,3 @@ collections: # A list of collections the CMS should be able to edit
         name: "sponsors"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
