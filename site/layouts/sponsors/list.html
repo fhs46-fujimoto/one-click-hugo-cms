@@ -2,43 +2,15 @@
 
 {{ partial "jumbotron" (dict "imageUrl" "/img/main_img3.jpg" "title" "スポンサー一覧") }}
 
-<link rel="stylesheet" href="/css/sponsor-list.css" />
-<div class="mw7 center pv4">
-    <table class="sponsor-list">
-        <thead>
-            <tr>
-                <th>
-                    名前
-                </th>
-                <th>
-                    卒業期
-                </th>
-                <th>
-                    URL
-                </th>
-                <th>
-                    メッセージ
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            {{ range (where .Parent.Pages "Type" "poster") }}
-            <tr>
-                <td>
-                    <a href="{{.Permalink}}">{{ .Params.sponsor}}</a>
-                </td>
-                <td>
-                    {{ .Params.grade}}
-                </td>
-                <td class="overflow-ellipsis">
-                    <a href="{{ .Params.link_url}}">{{ .Params.link_url}}</a>
-                </td>
-                <td class="overflow-ellipsis">
-                    {{ .Plain}}
-                </td>
-            </tr>
-            {{ end }}
-        </tbody>
-    </table>
+<div class="mw7 center">
+    <ul class="flex-ns flex-wrap mhn1-ns pa3">
+        {{ range (where .Parent.Pages "Type" "poster") }}
+        <div class="w-50-ns ph1-ns flex">
+            {{ .Render "li_sponsor"}}
+        </div>
+        {{ end }}
+    </ul>
+    {{ partial "pagination" . }}
 </div>
-{{ end }}
+
+{{end}}
