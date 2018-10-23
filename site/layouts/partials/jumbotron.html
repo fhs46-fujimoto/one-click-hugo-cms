@@ -3,7 +3,9 @@
     <div class="db mb3">
       <div class="mw7 relative bg-fix-primary mb3">
         <h1 class="f2 f1-l b di lh-title mb3 white mw6 bg-primary">
-          {{.title}}
+          {{range .title}}
+          {{ . }}<br>
+          {{ end }}
         </h1>
       </div>
       <div class="mw7 relative bg-fix-primary">
