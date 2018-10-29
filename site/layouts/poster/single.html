@@ -11,12 +11,12 @@
       {{ if .Params.link_url }}
         <a href="{{ .Params.link_url }}" target="_blank">
           {{ if .Params.image }}
-            <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+            <img src="{{ .Params.image }}" alt="{{ .Params.alt }}" />
           {{ end }}
         </a>
       {{ else }}
         {{ if .Params.image }}
-          <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+          <img src="{{ .Params.image }}" alt="{{ .Params.alt }}" />
         {{ end }}
       {{ end }}
       {{ .Content }}
