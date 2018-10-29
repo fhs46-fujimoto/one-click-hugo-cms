@@ -9,7 +9,8 @@
     "build": "gulp build",
     "build-preview": "gulp build-preview",
     "start": "gulp server",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "lambda" : "netlify-lambda"
   },
   "author": "",
   "license": "MIT",
@@ -39,6 +40,7 @@
     "gulp-util": "^3.0.7",
     "imports-loader": "^0.8.0",
     "netlify-cms": "^2.1.1",
+    "netlify-lambda": "^1.0.2",
     "postcss-cssnext": "^3.0.0",
     "postcss-import": "^12.0.0",
     "postcss-loader": "^3.0.0",
