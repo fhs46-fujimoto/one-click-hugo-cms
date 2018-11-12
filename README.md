@@ -9,7 +9,7 @@
   * 必ずしも必要なことではないが、Deploy to Netlifyボタンクリック時にクッキーなどの値を見て自動的に紐づけようとするため、明示的にログインしておくほうが
 
 ## 手順1 Deploy to Netlify ボタンをクリック
-以下のボタンをクリックする。クリックするとNetlify CMS の画面に遷移する
+以下のボタンをクリックする。クリックするとNetlify CMS の画面に遷移する  
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/KoinoEngineering/one-click-hugo-cms&stack=cms)
 
 ## 手順2 デプロイ
