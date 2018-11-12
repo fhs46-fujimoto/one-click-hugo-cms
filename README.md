@@ -15,18 +15,18 @@
 ## 手順2 デプロイ
 ### 手順2-1 github連携
 * Deploy to Netlifyボタンをクリックすると以下のような画面に遷移する。  
-  <img src=".\.src\img\01_github連携.png" height="300px">
+  <img src=".\.src\img\01_github連携.PNG" height="300px">
 * [Connect to Github] のボタンをクリックするとポップアップが表示されるので、内容を確認して [Authorize Netlify] ボタンをクリック。  
   <img src=".\.src\img\02_github連携.PNG" height="300px">
 
 ### 手順2-2 リポジトリの作成
 * 画面の右側が以下のように切り替わるので、コピー先のリポジトリを指定する。デフォルトはコピー元リポジトリ名
 既存のリポジトリは指定できないので、新しいリポジトリ名を指定する  
-  <img src=".\.src\img\03_リポジトリ作成.png" height="300px">
+  <img src=".\.src\img\03_リポジトリ作成.PNG" height="300px">
 * デプロイが開始される(サイト名は自動で決まるが、設定画面から変更可能)  
-  <img src=".\.src\img\04_デプロイ.png" height="300px">
+  <img src=".\.src\img\04_デプロイ.PNG" height="300px">
 * デプロイ終了後、画面左上に表示されているURLにアクセスして表示できればデプロイ完了  
-  <img src=".\.src\img\08_home.png" height="300px">
+  <img src=".\.src\img\08_home.PNG" height="300px">
 
 
 ## 手順3 管理画面の権限の設定
