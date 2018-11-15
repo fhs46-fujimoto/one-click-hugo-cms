@@ -9,18 +9,18 @@
   * 必ずしも必要なことではないが、Deploy to Netlifyボタンクリック時にクッキーなどの値を見て自動的に紐づけようとするため、明示的にログインしておくほうが良い
 
 ## 手順1 Deploy to Netlify ボタンをクリック
-* 以下のボタンをクリックする。画面が遷移するので。[手順2 デプロイ](#手順2-デプロイ) 以降の手順に従う  
+* 以下のボタンをクリックし、[手順2 デプロイ](#手順2-デプロイ) 以降の手順に従う  
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/KoinoEngineering/one-click-hugo-cms&stack=cms)
 
 ## 手順2 デプロイ
 ### 手順2-1 github連携
-* Deploy to Netlifyボタンをクリックすると以下のような画面に遷移する。  
+* 以下のような画面に遷移する  
   <img src=".\.src\img\01_github連携.PNG" height="300px">
-* [Connect to Github] のボタンをクリックするとポップアップが表示されるので、内容を確認して [Authorize Netlify] ボタンをクリック。  
+* [Connect to Github] のボタンをクリックするとポップアップが表示されるので、内容を確認して [Authorize Netlify] ボタンをクリック  
   <img src=".\.src\img\02_github連携.PNG" height="300px">
 
 ### 手順2-2 リポジトリの作成
-* 画面の右側が以下のように切り替わるので、コピー先のリポジトリを指定する。デフォルトはコピー元リポジトリ名
+* 画面の右側が以下のように切り替わるので、コピー先のリポジトリを指定する。デフォルトはコピー元リポジトリ名  
 既存のリポジトリは指定できないので、新しいリポジトリ名を指定する  
   <img src=".\.src\img\03_リポジトリ作成.PNG" height="300px">
 * デプロイが開始される(サイト名は自動で決まるが、設定画面から変更可能)  
