@@ -1,46 +1,43 @@
-# Hugo template for Netlify CMS with Netlify Identity
+# サイト複製手順
+## 準備
+### 準備するもの
+* [GitHub](https://github.com)アカウント
+* [Netlify](https://app.netlify.com/)アカウント
+  * 以下の手順は 今回はgithubアカウントから連携してログインしたもの
+### やっておくこと
+* 連携したいgithubのアカウントでgithubにログインしておく
+  * 必ずしも必要なことではないが、Deploy to Netlifyボタンクリック時にクッキーなどの値を見て自動的に紐づけようとするため、明示的にログインしておくほうが良い
 
-This is a small business template built with [Victor Hugo](https://github.com/netlify/victor-hugo) and [Netlify CMS](https://github.com/netlify/netlify-cms), designed and developed by [Darin Dimitroff](http://www.darindimitroff.com/), [spacefarm.digital](https://www.spacefarm.digital).
-
-## Getting started
-
-Use our deploy button to get your own copy of the repository. 
-
+## 手順1 Deploy to Netlify ボタンをクリック
+* 以下のボタンをクリックし、[手順2 デプロイ](#手順2-デプロイ) 以降の手順に従う  
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/KoinoEngineering/one-click-hugo-cms&stack=cms)
 
-This will setup everything needed for running the CMS:
+## 手順2 デプロイ
+### 手順2-1 github連携
+* 以下のような画面に遷移する  
+  <img src=".\.src\img\01_github連携.PNG" height="300px">
+* [Connect to Github] のボタンをクリックするとポップアップが表示されるので、内容を確認して [Authorize Netlify] ボタンをクリック  
+  <img src=".\.src\img\02_github連携.PNG" height="300px">
 
-* A new repository in your GitHub account with the code
-* Full Continuous Deployment to Netlify's global CDN network
-* Control users and access with Netlify Identity
-* Manage content with Netlify CMS
+### 手順2-2 リポジトリの作成
+* 画面の右側が以下のように切り替わるので、コピー先のリポジトリを指定する。デフォルトはコピー元リポジトリ名  
+既存のリポジトリは指定できないので、新しいリポジトリ名を指定する  
+  <img src=".\.src\img\03_リポジトリ作成.PNG" height="300px">
+* デプロイが開始される(サイト名は自動で決まるが、設定画面から変更可能)  
+  <img src=".\.src\img\04_デプロイ.PNG" height="300px">
+* デプロイ終了後、画面左上に表示されているURLにアクセスして表示できればデプロイ完了  
+  <img src=".\.src\img\08_home.PNG" height="300px">
 
-Once the initial build finishes, you can invite yourself as a user. Go to the Identity tab in your new site, click "Invite" and send yourself an invite.
 
-Now you're all set, and you can start editing content!
-
-## Local Development
-
-Clone this repository, and run `yarn` or `npm install` from the new folder to install all required dependencies.
-
-Then start the development server with `yarn start` or `npm start`.
-
-## Layouts
-
-The template is based on small, content-agnostic partials that can be mixed and matched. The pre-built pages showcase just a few of the possible combinations. Refer to the `site/layouts/partials` folder for all available partials.
-
-Use Hugo’s `dict` functionality to feed content into partials and avoid repeating yourself and creating discrepancies.
-
-## CSS
-
-The template uses a custom fork of Tachyons and PostCSS with cssnext and cssnano. To customize the template for your brand, refer to `src/css/imports/_variables.css` where most of the important global variables like colors and spacing are stored.
-
-## SVG
-
-All SVG icons stored in `site/static/img/icons` are automatically optimized with SVGO (gulp-svgmin) and concatenated into a single SVG sprite stored as a a partial called `svg.html`. Make sure you use consistent icons in terms of viewport and art direction for optimal results. Refer to an SVG via the `<use>` tag like so:
-
-```
-<svg width="16px" height="16px" class="db">
-  <use xlink:href="#SVG-ID"></use>
-</svg>
-```
+## 手順3 管理画面の権限の設定
+### 手順3-1 管理画面にログイン可能なユーザを制限する
+* [Identity] タブの [Setting and usage] をクリックして設定画面へ遷移する  
+  <img src=".\.src\img\05_Identitly.PNG" height="300px">
+* [Registration] の設定を[Invite only]に設定する  
+  <img src=".\.src\img\06_Registration.PNG" height="300px">
+### 手順3-2 github連携
+今回はnetlifyアカウントをgithubアカウントから連携して作っているため、githubアカウントでのログインを許可する
+* [External providers] からgithubを選択し [Use default configuration] にチェックを入れて [Enable Github] をクリック  
+  <img src=".\.src\img\07_enable_github.PNG" height="300px">
+* 管理画面(サイトのURL/admin)にログインして確認する  
+  <img src=".\.src\img\09_content_manager.PNG" height="300px">
