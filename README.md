@@ -10,7 +10,7 @@
 
 ## 手順1 Deploy to Netlify ボタンをクリック
 * 以下のボタンをクリックし、[手順2 デプロイ](#手順2-デプロイ) 以降の手順に従う  
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/KoinoEngineering/one-click-hugo-cms&stack=cms)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/fhs46-fujimoto/one-click-hugo-cms&stack=cms)
 
 ## 手順2 デプロイ
 ### 手順2-1 github連携
