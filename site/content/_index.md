@@ -1,6 +1,6 @@
 ---
-title: 4月20日(土) | 12〜16時
-subtitle: ホテルグランドパレス　九段下
+title: '4月20日(土) '
+subtitle: '総会：12:30-13:10 / 懇親会：13:40-16:00'
 image: /img/main_img7.png
 blurb:
   heading: ”平成最後の同窓会”
