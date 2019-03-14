@@ -41,7 +41,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Image, name: image, widget: image}
           - {label: "Summary", name: summary, widget: object, fields: [
               {label: "title", name: "title", widget: string},
-              {label: "image", name: "imageUrl", widget: image}
+              {label: "image", name: "imageUrl", widget: image},
               {label: "imageAlt", name: "imageAlt", widget: string}]}
           - {label: "Blurb", name: blurb, widget: object, fields: [
               {label: "Heading", name: "heading", widget: string},
