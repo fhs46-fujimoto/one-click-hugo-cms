@@ -1,8 +1,8 @@
 <div class="bg-off-white pv4">
-  {{ if .title }}
-  <h2 class="f2 b lh-title mb3">{{.title}}</h2>
-  {{ end }}
   <div class="ph3 center mw7">
-    <img src="{{ .imageUrl }}" alt="{{.imageAlt}}" class="center w-100"/>
+    {{ if .title }}
+    <h2 class="f2 b lh-title mb3">{{.title}}</h2>
+    {{ end }}
+    <img src="{{ .imageUrl }}" alt="{{.imageAlt}}" class="center w-100" />
   </div>
 </div>
