@@ -6,6 +6,8 @@
 
 {{ partial "single-button" .Params.regist }}
 
+{{ partial "single-image" (dict "title" .Params.summary.title "imageUrl" .Params.summary.imageUrl "imageAlt" .Params.summary.imageAlt)}}
+
 {{ partial "google-map" . }}
 
 {{ partial "blog" . }}
