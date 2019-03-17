@@ -2,10 +2,10 @@
 title: '4月20日(土) '
 subtitle: '総会：12:30-13:10 / 懇親会：13:40-16:00'
 image: /img/main_img7.png
-summary: 
-  title: タイトルテスト
-  imageUrl: /img/products-grid1.jpg
-  imageAlt: alt test
+summary:
+  imageAlt: 参加予定者数
+  imageUrl: /img/3-13参加予定者.png
+  title: 参加予定者数
 blurb:
   heading: ”平成最後の同窓会”
   text: >-
