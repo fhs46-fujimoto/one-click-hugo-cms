@@ -5,7 +5,7 @@ image: /img/main_img7.png
 summary:
   imageAlt: 参加予定者数
   imageUrl: /img/3-13参加予定者.png
-  title: 参加予定者数
+  title: '参加予定者数 :: 150 名 (3/13 時点)'
 blurb:
   heading: ”平成最後の同窓会”
   text: >-
