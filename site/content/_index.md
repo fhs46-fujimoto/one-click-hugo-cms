@@ -4,8 +4,8 @@ subtitle: '総会：12:30-13:10 / 懇親会：13:40-16:00'
 image: /img/main_img7.png
 summary:
   imageAlt: 参加予定者数
-  imageUrl: /img/2019-03-30_21h16_19.png
-  title: '参加予定者数 :: 279 名 (3/30 時点)'
+  imageUrl: /img/2019-04-08_13h54_59.png
+  title: '参加予定者数 :: 324 名 (4/08 時点)'
 blurb:
   heading: ”平成最後の同窓会”
   text: >-
